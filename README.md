@@ -28,3 +28,8 @@ To automate this script on a production server, use **Crontab**.
 1. Open crontab: `crontab -e`
 2. Add the following line to run the monitor every hour:
    `0 * * * * cd /home/username/linux-system-monitor && ./scripts/system_monitor.sh`
+
+## ⏰ Automation
+To run this monitor automatically on a server, use **Crontab**:
+- Run `crontab -e`
+- Add: `0 * * * * cd /home/username/linux-system-monitor && ./scripts/system_monitor.sh`
