@@ -19,4 +19,6 @@ A Bash-based automation tool to monitor system resources (CPU, RAM, Disk) and lo
 1. Clone the repo: `git clone https://github.com/Aniketchavan14/linux-system-monitor.git`
 2. Give execution permissions: `chmod +x scripts/system_monitor.sh`
 3. Run the script: `./scripts/system_monitor.sh`
-# Tested on CachyOS
+
+## Tested on CachyOS
+Environment: Developed on CachyOS (Arch-based) utilizing the Bore Kernel for optimized performance.
