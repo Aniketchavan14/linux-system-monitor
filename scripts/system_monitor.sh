@@ -11,7 +11,7 @@
 CPU_THRESHOLD=80
 RAM_THRESHOLD=80
 DISK_THRESHOLD=90
-LOG_FILE="/var/log/system_monitor.log"
+LOG_FILE="logs/system_monitor.log"
 TIMESTAMP=$(date "+%Y-%m-%d %H:%M:%S")
 
 # Ensure the log file exists and is writable
@@ -32,6 +32,7 @@ if [ "$CPU_INT" -gt "$CPU_THRESHOLD" ]; then
     echo "$MESSAGE"
 else
     echo "CPU Usage: $CPU_USAGE% (OK)"
+    echo "$TIMESTAMP CPU Usage: $CPU_USAGE% (OK)" >> "$LOG_FILE"
 fi
 
 # 2. Check RAM Usage
