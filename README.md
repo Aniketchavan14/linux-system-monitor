@@ -22,3 +22,9 @@ A Bash-based automation tool to monitor system resources (CPU, RAM, Disk) and lo
 
 ## Tested on CachyOS
 Environment: Developed on CachyOS (Arch-based) utilizing the Bore Kernel for optimized performance.
+
+## ⏰ Automation (Deployment)
+To automate this script on a production server, use **Crontab**. 
+1. Open crontab: `crontab -e`
+2. Add the following line to run the monitor every hour:
+   `0 * * * * cd /home/username/linux-system-monitor && ./scripts/system_monitor.sh`
